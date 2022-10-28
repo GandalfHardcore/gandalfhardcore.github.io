@@ -5,16 +5,16 @@
     src: url("../fonts/BebasNeueRegular.otf") format("opentype");
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     font-family: 'Oswald', sans-serif;
     background-color: black;
     font-weight: 100;
@@ -23,32 +23,40 @@ body{
     background-image: url('../images/black.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-    
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-h2{
+h2 {
     font-size: 3vw;
     font-weight: 100 !important;
-    
+
     letter-spacing: 1vw;
 }
 
-p{
+p {
     font-weight: 100 !important;
     font-size: 1.5vw;
     margin-bottom: 2vw;
     letter-spacing: 0.4vw;
 }
 
-a{
+a {
     color: #dca24b;
     font-size: 1.6vw;
-        font-weight: 100 !important;
-        text-decoration: none;
+    font-weight: 100 !important;
+    text-decoration: none;
 }
 
-header{
+img {
+    pointer-events: none;
+}
+
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,78 +64,71 @@ header{
     height: 26vw;
 }
 
-header h1{
+header h1 {
     font-family: Bebas;
     font-size: 9vw;
-    color:#dca24b;
+    color: #dca24b;
     font-weight: 100;
 }
 
-main{
-    
-    /*
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;*/
+main {
     height: 100%;
-        box-sizing: border-box;
-
+    box-sizing: border-box;
 }
 
-#text{
+#text {
     padding: 3vw;
 }
 
-#banner{
-        position: absolute;
-            top: 24.62vw;
-            width: 9vw;
-            left: 2vw;
+#banner {
+    position: absolute;
+    top: 24.62vw;
+    width: 9vw;
+    left: 2vw;
 }
 
-.grid-container{
+.grid-container {
     opacity: 0.7;
-        background-color: black;
+    background-color: black;
     height: 70%;
     display: grid;
     padding: 6vw;
     grid-template-columns: 30% 70%;
 }
 
-.portfolio{
-   
+.portfolio {
     grid-template-columns: 100%;
 }
 
-
-
-#portrait{
-   width: 100%;
-   height: 34vw;
+#portrait {
+    width: 100%;
+    height: 34vw;
 }
 
-#portrait img{
+#portrait img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#portfolio,#twitter,#fiverr,#youtube{
+#portfolio,
+#twitter,
+#fiverr,
+#youtube {
     transition: 1s;
     letter-spacing: 1vw;
-    
 }
 
-#twitter:hover{
+#twitter:hover {
     font-size: 1.7vw;
     margin-left: 1vw;
     color: #1DA1F2;
 }
 
-#fiverr:hover{
+#fiverr:hover {
     font-size: 1.7vw;
-        color: #1dbf73;
-        margin-left: 1vw;
+    color: #1dbf73;
+    margin-left: 1vw;
 }
 
 #youtube:hover {
@@ -142,36 +143,35 @@ main{
     margin-left: 1vw;
 }
 
-#back{
-    font-size: 1.7vw;  
+#back {
+    font-size: 1.7vw;
     color: white;
- display: inline-block;
+    display: inline-block;
     transition: 1s;
-        letter-spacing: 1vw;
-        color: #dca24b;
+    letter-spacing: 1vw;
+    color: #dca24b;
 }
 
 #back:hover {
-    
     font-size: 1.7vw;
-    color:#ffffff;
+    color: #ffffff;
     margin-left: -1vw;
 }
 
-#portfolio-ul{
+#portfolio-ul {
     margin-top: -3vw;
-        margin-bottom: 3vw;
+    margin-bottom: 3vw;
 }
 
-#portfolio-ul a{
+#portfolio-ul a {
     font-weight: bold;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-ul li{
+ul li {
     margin: 1vw;
     height: 1.7vw;
 }
@@ -229,63 +229,64 @@ ul li{
 }
 
 @media only screen and (max-width: 768px) {
-    .grid-container{
+    .grid-container {
         grid-template-columns: 100%;
     }
-    
+
     #banner {
-            position: absolute;
-            top: 24vw;
-            width: 20vw;
-            left: 2vw;
-        }
-    
-        #portrait {
-            width: 100%;
-             height: auto 
+        position: absolute;
+        top: 24vw;
+        width: 20vw;
+        left: 2vw;
     }
-    
+
+    #portrait {
+        width: 100%;
+        height: auto
+    }
+
     p {
         font-weight: 100 !important;
         font-size: 4.5vw;
         margin-bottom: 2vw;
         letter-spacing: 0.4vw;
     }
-    
+
     ul li {
         margin: 10vw;
         margin-left: 0vw;
     }
 
-    #portfolio-ul li{
-        height: auto ;
+    #portfolio-ul li {
+        height: auto;
         margin: 0;
     }
 
-    a{
+    a {
         font-size: 8vw !important;
     }
 
-        #twitter:hover {
-            font-size: 9vw;
-            
-        }
-    
-        #fiverr:hover {
-            font-size: 9vw;
-            
-        }
-    
-        #youtube:hover {
-            font-size: 9vw;
-           
-        }
-    
-        #portfolio:hover {
-            font-size: 9vw;
-            
-        }
+    #twitter:hover {
+        font-size: 9vw;
+
+    }
+
+    #fiverr:hover {
+        font-size: 9vw;
+
+    }
+
+    #youtube:hover {
+        font-size: 9vw;
+
+    }
+
+    #portfolio:hover {
+        font-size: 9vw;
+
+    }
 }
+
 /*#banner {
     position: absolute;
     top: 24vw;
