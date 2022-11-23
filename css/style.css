@@ -163,8 +163,14 @@ main {
     margin-bottom: 3vw;
 }
 
-#portfolio-ul a {
-    font-weight: bold;
+#portfolio-ul img{
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(86%) sepia(56%) saturate(2822%) hue-rotate(319deg) brightness(90%) contrast(92%);
+}
+
+#portfolio-ul li {
+    height: auto;
+    margin-bottom: 0;
 }
 
 ul {
